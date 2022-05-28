@@ -73,3 +73,21 @@ for( ; ;num++){
     if(n <= 50) break;
 }
 console.log(`количество итераций = ${num}, результат = ${n}`)
+
+//task 8
+
+let c;
+let d = 0;
+let sum3 = 0;
+let arithmeticMean;
+for( ; ; d++){
+    c = +prompt("Введите значение");
+    if(c == " " || c == 0) break;
+    if(isNaN(c)) {
+        console.log("Ошибка");
+        break;
+    };
+    sum3 += c;
+}
+arithmeticMean = sum3 / d;
+console.log(`Общая сумма = ${sum3} \n Среднее арифметическое чисел = ${arithmeticMean} `)
