@@ -62,3 +62,14 @@ for(let i = 2; i <= 9; i++){
         console.log(`${i} * ${j} = ${multipl}`);
     }
 }
+
+// task 7
+
+let n = 1000;
+let num = 0;
+
+for( ; ;num++){
+    n = n /2;
+    if(n <= 50) break;
+}
+console.log(`количество итераций = ${num}, результат = ${n}`)
