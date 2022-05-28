@@ -52,3 +52,13 @@ for(let i = 8; i <= 56; i++){
     console.log(i);
 }
 
+//task 6
+
+let multipl = 0;
+for(let i = 2; i <= 9; i++){
+    multipl = 0;
+    for(let j = 1; j <= 10; j++){
+        multipl = i * j;
+        console.log(`${i} * ${j} = ${multipl}`);
+    }
+}
