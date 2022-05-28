@@ -33,4 +33,14 @@ for(let i = 0; i <= 100; i++){
 
 console.log(`сумма чисел 100 = ${sum}`);
 
+//task 4
 
+let sum2 = 0;
+
+for(let i = 1; i <= 5; i++){
+    sum2 = 0;
+    for(let j = 1; j <= i; j++){
+        sum2 += j;
+    }
+    console.log(`Сумма чисел числа ${i} = ${sum2}`);
+}
