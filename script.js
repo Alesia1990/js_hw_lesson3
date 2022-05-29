@@ -90,4 +90,43 @@ for( ; ; d++){
     sum3 += c;
 }
 arithmeticMean = sum3 / d;
-console.log(`Общая сумма = ${sum3} \n Среднее арифметическое чисел = ${arithmeticMean} `)
+console.log(`Общая сумма = ${sum3} \n Среднее арифметическое чисел = ${arithmeticMean} `);
+
+//task 9
+
+let str = "4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36 8 57";
+let num2 = " ";
+let max = 0;
+let min = 0 + num2;
+for(let i = 0; i < str.length; i++){
+    if(str[i] != " "){
+        num2 += str[i];
+        if (num2 > max) max = num2;
+        if (num2 < min) min = num2;
+    } else{
+        num2 =" ";
+    }
+}
+console.log(`Максимальное число = ${max}`);
+console.log(`Минимальное число = ${min}`);
+
+//task 10
+
+let num3 = 8094264389542;
+let sum4 = 0;
+let f = 0;
+let reverse =" ";
+
+num3 = String(num3);
+
+for( ;f < num3.length; f++){
+    console.log(num3[f]);
+    sum4 += +num3[f];
+}
+
+for(let i = num3.length - 1; i >= 0; i--){
+    reverse += num3[i];
+}
+console.log(`Цифр в числе = ${f}`);
+console.log(`Сумма цифр в числе = ${sum4}`);
+console.log(`Обратный порядок = ${reverse}`);
